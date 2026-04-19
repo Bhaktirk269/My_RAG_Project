@@ -20,6 +20,11 @@ A robust Retrieval-Augmented Generation (RAG) system that allows you to chat wit
 
 ### Prepare the AI Models
 Open your terminal and pull the necessary models:
-```bash
+bash
 ollama pull llama3
 ollama pull nomic-embed-text
+
+## **Install required Python packages:**
+* pip install fastapi uvicorn langchain langchain-community langchain-ollama pypdf chromadb python-multipart
+## **Start the FastAPI server:**
+* python -m uvicorn main:app --reload
